@@ -41,7 +41,7 @@
         <!-- nav section  -->
         <nav x-data="{ isOpen: false }"
             class="relative bg-white lg:bg-[#F85559] container mx-auto rounded-full lg:my-8 px-6 py-1">
-            <div class="container px-6 py-3 mx-auto md:flex">
+            <div class="container px-6 py-3 mx-auto lg:flex">
                 <div class="flex items-center justify-between  ">
                     <a href="#">
                         <div class="flex items-center gap-3">
@@ -132,8 +132,8 @@
 
                     <div class="bg-i"></div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn">❮</a>
-                        <a href="#slide2" class="btn">❯</a>
+                        <a href="#slide4" class="text-white">❮</a>
+                        <a href="#slide2" class="text-white">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
@@ -158,8 +158,8 @@
                     </div>
 
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn">❮</a>
-                        <a href="#slide3" class="btn">❯</a>
+                        <a href="#slide1" class="text-white">❮</a>
+                        <a href="#slide3" class="text-white">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
@@ -184,8 +184,8 @@
                     </div>
 
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn">❮</a>
-                        <a href="#slide4" class="btn">❯</a>
+                        <a href="#slide2" class="text-white">❮</a>
+                        <a href="#slide4" class="text-white">❯</a>
                     </div>
                 </div>
             </div>
@@ -216,8 +216,8 @@
     <main>
         <!-- deal of the day section -->
         <section class="container mx-auto mt-10  lg:mt-52  ">
-            <div class="flex flex-col p-10 space-y-8 lg:flex-row justify-between items-center">
-                <div class="space-y-4">
+            <div class="flex flex-col p-10 space-y-8  lg:flex-row justify-between items-center">
+                <div class="space-y-4 text-center lg:text-left">
                     <h1 class="font-extrabold text-5xl">Deal of the day</h1>
                     <p class="font-light">
                         Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
@@ -225,8 +225,8 @@
                     </p>
 
                 </div>
-                <div>
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:15;"></span>
@@ -235,18 +235,22 @@
                             </span>
                             days
                         </div>
+                        <img class="my-auto pb-6" src="./images/Frame.jpg" alt="">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:10;"></span>
+
                             </span>
                             hours
                         </div>
+                        <img class="my-auto pb-6" src="./images/Frame.jpg" alt="">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:24;"></span>
                             </span>
                             min
                         </div>
+                        <img class="my-auto pb-6" src="./images/Frame.jpg" alt="">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:56;"></span>
@@ -446,11 +450,90 @@
             </div>
         </section>
         <!-- meet the team section  -->
+        <section class="container mx-auto mt-16">
+            <div class=" flex justify-center items-center w-full  bg-no-repeat bg-cover lg:h-[65vh]  "
+                style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(images/banner1.png);">
+                <div class="text-white flex flex-wrap justify-ceter items-center ">
 
-    
+                    <div class="text-center my-20 lg:my-44">
+                        <div class=" text-center px-12 lg:p-0 ">
+                            <h1 class="text-4xl font-extrabold mb-2">Meet the team section</h1>
+                            <p class="text-s font-medium lg:w-4/6 mx-auto">Contrary to popular belief, is not simply random text. It has
+                                roots in a piece of
+                                classical 
+                                Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center justify-between  mt-10 space-y-8 lg:space-x-40">
+                            <div class="items-center text-center mt-8">
+                                <div><img class="h-28" src="./images/member1.png" alt=""></div>
+                                <h1 class="mt-5">Awlad Hossain</h1>
+                                <p>Fruits Expert</p>
+                                <div class="flex justify-evenly mt-3">
+                                    <img src="images/facebook 1 (1).png" alt="">
+                                    <img src="images/twitter (1) 1.png" alt="">
+                                    <img src="images/linkedin 1 (1).png" alt="">
+                                </div>
+                            </div>
+                            <div class="items-center  text-center">
+                                <div><img class="h-28" src="./images/member2.png" alt=""></div>
+                                <h1 class="mt-5">Safia Chowdhury</h1>
+                                <p>Fruits Expert</p>
+                                <div class="flex justify-evenly mt-3">
+                                    <img src="images/facebook 1 (1).png" alt="">
+                                    <img src="images/twitter (1) 1.png" alt="">
+                                    <img src="images/linkedin 1 (1).png" alt="">
+                                </div>
+                            </div>
+                            <div class=" items-center  text-center">
+                                <div> <img class="h-28" src="./images/member3.png" alt=""></div>
+                                <h1 class="mt-5">Rokib Hossain</h1>
+                                <p>Fruits Expert</p>
+                                <div class="flex justify-evenly mt-3">
+                                    <img src="images/facebook 1 (1).png" alt="">
+                                    <img src="images/twitter (1) 1.png" alt="">
+                                    <img src="images/linkedin 1 (1).png" alt="">
+                                </div>
+                            </div>
+                            <div class="items-center text-center">
+                                <div><img class="h-28" src="./images/member4.png" alt=""></div>
+                                <h1 class="mt-5">Chaity</h1>
+                                <p>Fruits Expert</p>
+                                <div class="flex justify-evenly mt-3">
+                                    <img src="images/facebook 1 (1).png" alt="">
+                                    <img src="images/twitter (1) 1.png" alt="">
+                                    <img src="images/linkedin 1 (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
     </main>
-    <footer>
+    <footer class="bg-black text-white lg:h-[30vh]= mt-20">
+        <div class="flex justify-center items-center gap-4 pt-20">
+            <div><img src="./images/logo.png" alt=""></div>
+            <p class="text-2xl font-bold">Fruit Burst</p>
+        </div>
+        <div class="flex flex-wrap pt-8 lg: justify-center gap-20 ">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Shop</a>
+            <a href="">All Fruits</a>
+            <a href="">Support</a>
+        </div>
+        <div class="flex flex-wrap pt-10 pb-20 justify-center gap-10 ">
+            <a href=""><img src="images/facebook 1.png" alt=""></a>
+            <a href=""><img src="images/twitter 1.png" alt=""></a>
+            <a href=""><img src="images/linkedin 1.png" alt=""></a>
+            <a href=""><img src="images/instagram 1.png" alt=""></a>
+            <a href=""><img src="images/apple 1.png" alt=""></a>
+            <a href=""><img src="images/Group 49.png" alt=""></a>
+
+        </div>
 
 
 
